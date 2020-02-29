@@ -1,0 +1,11 @@
+$(document).ready(function(){
+    $(".image1").hover(function(){
+        $(".text1").toggle();
+    });
+    $(".image2").hover(function(){
+        $(".text2").toggle();
+    });
+    $(".image3").hover(function(){
+        $(".text3").toggle(); 
+    });
+});
