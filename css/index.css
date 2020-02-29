@@ -16,12 +16,13 @@ h1 {
 h2 {
     text-align: center;
 }
-.float {
+.float p {
     padding: 10px;
     margin: 2px;
     color: black;
     font-style: italic;
     float: right;
+
 }
 h2 {
     color: orange;
@@ -30,4 +31,11 @@ h2 {
 }
 p {
     color: orange;
+}
+h3 {
+    padding: 15px;
+    margin: 5px;
+    color: black;
+    font-style: italic; 
+    background-color: orange;
 }
