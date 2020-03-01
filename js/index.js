@@ -20,4 +20,13 @@ $(document).ready(function(){
     $(".image7").hover(function(){
         $(".text7").toggle(); 
     });
+    $(".image8").hover(function(){
+        $(".text8").toggle(); 
+    });
+    $(".image9").hover(function(){
+        $(".text9").toggle(); 
+    });
+    $(".image10").hover(function(){
+        $(".text10").toggle(); 
+    });
 });

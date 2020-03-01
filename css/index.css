@@ -5,7 +5,7 @@ body{
 .intro {
     background-size: cover;
     background-image: url(../images/pizzaz.jpg);
-    height: 450px;
+    height: 545px;
     background-repeat: no-repeat;
 }
 h1 {
@@ -22,6 +22,7 @@ h2 {
     color: black;
     font-style: italic;
     float: right;
+    background-color: cornsilk;
 
 }
 h2 {
@@ -41,7 +42,7 @@ h3 {
     font-style: italic; 
     background-color: orange;
 }
-.text1, .text2, .text3, .text4, .text5 ,.text6, .text7, .text8{
+.text1, .text2, .text3, .text4, .text5 ,.text6, .text7, .text8, .text9, .text10{
     display: none;
     opacity: 1;
     position: absolute;
@@ -52,7 +53,7 @@ h3 {
     background-color: white;
 }
 #welcome {
-    float: left;
+    float: left;;
 }
 .hover{
     margin-top: 10px;
