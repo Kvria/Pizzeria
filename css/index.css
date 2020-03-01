@@ -41,15 +41,15 @@ h3 {
     font-style: italic; 
     background-color: orange;
 }
-.text1, .text2, .text3{
-    text-align: center;
+.text1, .text2, .text3, .text4, .text5 ,.text6, .text7, .text8{
     display: none;
     opacity: 1;
     position: absolute;
-    height: 180px;
-    width: 200px;
+    height: 15px;
+    width: 0px;
     padding-top: 100px;
-    color: blue;
+    color: black;
+    background-color: white;
 }
 #welcome {
     float: left;
