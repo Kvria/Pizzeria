@@ -29,4 +29,16 @@ $(document).ready(function(){
     $(".image10").hover(function(){
         $(".text10").toggle(); 
     });
+    $(".image11").hover(function(){
+        $(".text11").toggle(); 
+    });
+    $(".image12").hover(function(){
+        $(".text12").toggle(); 
+    });
+    $(".image13").hover(function(){
+        $(".text13").toggle(); 
+    });
+    $(".image14").hover(function(){
+        $(".text14").toggle(); 
+    });
 });
