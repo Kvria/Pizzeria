@@ -5,7 +5,7 @@ body{
 }
 .intro {
     background-size: cover;
-    background-image: url(../images/pizzaz.jpg);
+    background-image: url(../images/newpiz.jpg);
     height: 545px;
     background-repeat: no-repeat;
 }
@@ -22,8 +22,6 @@ h2 {
     margin: 2px;
     color: black;
     font-style: italic;
-    float: right;
-    background-color: cornsilk;
 
 }
 h2 {
@@ -45,7 +43,7 @@ h3 {
 }
 .text1, .text2, .text3, .text4, .text5 ,.text6, .text7, .text8, .text9, .text10, .text11, .text12, .text13, .text14{
     display: none;
-    opacity: 1;
+    opacity: 0.5;
     position: absolute;
     height: 15px;
     width: 0px;
@@ -57,7 +55,7 @@ h3 {
     float: left;;
 }
 .hover{
-    margin-top: 10px;
+    margin-top: 20px;
 }
 li{
     color: orange;
@@ -70,4 +68,23 @@ h4{
 }
 label{
     color: orange;
+}
+.welcome{
+    background-image: url(../images/pizza\ 1.jpeg.jpeg);
+    height: 300px;
+    background-repeat: no-repeat;
+    color: black;
+    background-size: cover;
+}
+#menu{
+    background-image: url(../images/board2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.submit{
+    box-align: center;
+}
+#order{
+    background-image: url(../images/order2.jpeg);
+    background-repeat: no-repeat;
 }

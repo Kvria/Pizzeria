@@ -11,15 +11,14 @@
     </head>
     <body>
         <div class = "intro">
-            <br><br><br><br><br><br><br><br>
+            <br><br><br>
             <div id="welcome">
                  <h1>We have been expecting you......</h1>
                  <br><br><br><br><br><br><br>
-            </div>
-            <div class="float">
                     <p>Our motto: <b>"Service with a smile"</b> ensures that the customer is given the<br> highest prority during service as your feedback is highly regarded.</p>
             </div>
         </div>
+        <div class="welcome">
                 <h2>Welcome to Kuria's Pizzeria!!</h2>
                     <p>We make pizzas with an original recipe used in Italy and has been passed down from generation to generation.</p>
                     <p>We use fresh vegetables and meat to give our customers the best nutritious experience one could get.</p>
@@ -27,6 +26,8 @@
                     <p>We sell our pizzas in different varieties including size, flavours and toppings.</p>
                     <p>We have also found a way to bring you closer to our food by our delivery services where food is delivered to your current location.</p>
                     <p>You can now get our pizzas delivered to your door by placing your order in the form below; </p>
+                </div>
+                <div id="menu">
                 <h3>Size</h3>
                     <div class="row">
                         <div class="col-md-4">
@@ -123,16 +124,17 @@
                             </div>
                         </div>
                     </div>
+                </div>
                     <br><br><br>
                 <h3>Prices</h3>
                     <div class="row">
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <h5>size</h5>
                             <p>small = 650/=</p>
                             <p>medium= 800/=</p>
                             <p>large= 950/=</p>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <h5>crust</h5>
                             <ul>
                                 <li>crispy = (included in the size)</li>
@@ -140,7 +142,7 @@
                                 <li>glutten-free = +150/=(added to size price)</li>
                             </ul>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <h5>toppings</h5>
                             <ul>
                                 <li>extra bacon = +70/=</li>
@@ -150,7 +152,8 @@
                                 <li>extra olives = +150/=</li>
                             </ul>
                         </div>
-                        <div class="col-md-3">
+                        <div class=col-md-4>
+                        </div>
                             <h5>delivery</h5>
                             <ul>
                                 <li>within Nairobi = +150/=</li>
@@ -159,11 +162,12 @@
                         </div>
                     </div>
                     <br><br><br><br>
+                <div id ="order">
                 <h4>Order now!!!</h4>
                 <form>
                     <div class="row">
                         <br><br><br>
-                        <div class=col-md-2>
+                        <div class=col-md-12>
                             <div class="form-group">
                             <label for="exampleInputFirstName">First Name</label>
                             <input type="text" class="form-control" id="fname" >
@@ -178,7 +182,7 @@
                             <input type="number" class="form-control" id="contact" >
                             </div>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-12">
                             <div class="form-group" >
                                 <p>Kindly pick the size of your choice</p>
                                 <select name="size" id="size" label="Size?">
@@ -188,8 +192,15 @@
                                 </select>
                             </div>
                             <div class="form-group" >
+                                <p>Kindly pick the crust of your choice</p>
+                                <select name="crust" id="crust" label="crust?">
+                                    <option value="crispy">crispy</option>
+                                    <option value="stuffed">stuffed</option>
+                                    <option value="gluten-free">Gluten free</option>
+                                </select>
+                            <div class="form-group" >
                                 <p>Pick the toppings of your choice</p>
-                                <select name="toppings" id="toppings"></select>
+                                <select name="toppings" id="toppings">
                                     <option value="bacon">Bacon</option>
                                     <option value="bell">Bell peppers</option>
                                     <option value="corn">Corn</option>
@@ -198,14 +209,14 @@
                             </div>
                             <div class="form-group" >
                                 <p>Do you want your food delivered?</p>
-                                <select name="delivery" id="delivery"></select>
+                                <select name="delivery" id="delivery">
                                     <option value="yes">Yes</option>
                                 <option value="no">No</option>
                                 </select>
                             </div>
                             <div class="form-group" >
                                 <p>If yes, choose your location</p>
-                                <select name="location" id="location"></select>
+                                <select name="location" id="location">
                                     <option value="nai">Within Nairobi</option>
                                     <option value="nonai">Outside Nairobi</option>
                                 </select>
@@ -215,6 +226,8 @@
                     <div class= "submit">
                         <input type="submit" id="submit" >
                       </div>
+                </div>
+            </div>
                 </form>
         
     </body>

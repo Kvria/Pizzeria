@@ -53,6 +53,10 @@ function Order(firstName, lastName, contact, address, size, crust, toppings, fla
     this.toppings = toppings;
     this.flavours = flavours;
 }
+var size =["small", "medium", "large"]
+var crust=["crispy", "stuffed", "gfree"]
+var toppings=["ebacon", "ebell", "ecorn", "eolives"]
+
 var small = 650
 var medium = 800
 var large = 950
@@ -67,7 +71,10 @@ var nonai = 300
 
 let submitDetails = document.getElementById('submit');
 
-submitDetails.addEventListener('click', submitBirthday)
-function submitBirthday(e) {
+submitDetails.addEventListener('click', submitOrder)
+function submitOrder(e) {
   e.preventDefault();
-var calc = function add()
+  size = (document.getElementById("size").value);
+  crust = (document.getElementById("crust").value);
+  address=(document.getElementById("address").value);
+  
