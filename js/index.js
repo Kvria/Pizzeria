@@ -42,3 +42,32 @@ $(document).ready(function(){
         $(".text14").toggle(); 
     });
 });
+var order = new String;
+function Order(firstName, lastName, contact, address, size, crust, toppings, flavours) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.contact = contact;
+    this.address = address;
+    this. size = size;
+    this.crust = crust;
+    this.toppings = toppings;
+    this.flavours = flavours;
+}
+var small = 650
+var medium = 800
+var large = 950
+var stuffed = 50
+var gfree = 150
+var ebacon = 70
+var ebell = 50
+var ecorn = 50
+var eolives = 150
+var nai = 150
+var nonai = 300
+
+let submitDetails = document.getElementById('submit');
+
+submitDetails.addEventListener('click', submitBirthday)
+function submitBirthday(e) {
+  e.preventDefault();
+var calc = function add()

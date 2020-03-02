@@ -123,44 +123,98 @@
                             </div>
                         </div>
                     </div>
+                    <br><br><br>
+                <h3>Prices</h3>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h5>size</h5>
+                            <p>small = 650/=</p>
+                            <p>medium= 800/=</p>
+                            <p>large= 950/=</p>
+                        </div>
+                        <div class="col-md-3">
+                            <h5>crust</h5>
+                            <ul>
+                                <li>crispy = (included in the size)</li>
+                                <li>stuffed = +100/= (added to size price)</li>
+                                <li>glutten-free = +150/=(added to size price)</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <h5>toppings</h5>
+                            <ul>
+                                <li>extra bacon = +70/=</li>
+                                <li>extra bell peppers = +50/=</li>
+                                <li>extra corn = +50/=</li>
+                                <li>extra cheese = +50/=</li>
+                                <li>extra olives = +150/=</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <h5>delivery</h5>
+                            <ul>
+                                <li>within Nairobi = +150/=</li>
+                                <li>outside Nairobi= +300/=</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br><br><br>
                 <h4>Order now!!!</h4>
                 <form>
-                    <div class="form-group">
-                      <label for="exampleInputFirstName">First Name</label>
-                      <input type="text" class="form-control" id="fname" >
+                    <div class="row">
+                        <br><br><br>
+                        <div class=col-md-2>
+                            <div class="form-group">
+                            <label for="exampleInputFirstName">First Name</label>
+                            <input type="text" class="form-control" id="fname" >
+                            </div>
+                            <div class="form-group">
+                            <label for="exampleInputLastName">Last Name</label>
+                            <input type="text" class="form-control" id="lname" >
+                    
+                            </div>
+                            <div class="form-group">
+                            <label for="exampleInputContact">Contact</label>
+                            <input type="number" class="form-control" id="contact" >
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group" >
+                                <p>Kindly pick the size of your choice</p>
+                                <select name="size" id="size" label="Size?">
+                                    <option value="small">Small</option>
+                                    <option value="medium">Medium</option>
+                                    <option value="large">Large</option>
+                                </select>
+                            </div>
+                            <div class="form-group" >
+                                <p>Pick the toppings of your choice</p>
+                                <select name="toppings" id="toppings"></select>
+                                    <option value="bacon">Bacon</option>
+                                    <option value="bell">Bell peppers</option>
+                                    <option value="corn">Corn</option>
+                                    <option value="olives">Olives</option>
+                                </select>
+                            </div>
+                            <div class="form-group" >
+                                <p>Do you want your food delivered?</p>
+                                <select name="delivery" id="delivery"></select>
+                                    <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                                </select>
+                            </div>
+                            <div class="form-group" >
+                                <p>If yes, choose your location</p>
+                                <select name="location" id="location"></select>
+                                    <option value="nai">Within Nairobi</option>
+                                    <option value="nonai">Outside Nairobi</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
-                    <div class="form-group">
-                      <label for="exampleInputLastName">Last Name</label>
-                      <input type="text" class="form-control" id="lname" >
-              
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputContact">Contact</label>
-                      <input type="number" class="form-control" id="contact" >
-                    </div>
-                    <div class="form-group" >
-                        <select name="size" id="size">
-                            <p>Size?</p>
-                            <option value="small">small</option>
-                            <option value="medium">medium</option>
-                            <option value="large">large</option>
-                        </select>
+                    <div class= "submit">
+                        <input type="submit" id="submit" >
                       </div>
-
-                      <div class="form-group" >
-                        <select name="delivery" id="delivery">
-                            <p>Do you want your food delivered?</p>
-                            <option value="yes">yes</option>
-                          <option value="no">no</option>
-                        </select>
-                      </div>
-                    <div class="form-group" >
-                        <select name="location" id="location">
-                            <p>If yes, choose your location</p>
-                            <option value="nai">Within Nairobi</option>
-                            <option value="nonai">Outside Nairobi</option>
-                        </select>
-                    </div>
                 </form>
         
     </body>

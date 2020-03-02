@@ -1,6 +1,7 @@
 body{
     margin: 50px;
-    background-color: black;   
+    background-color: black;  
+    color: orange; 
 }
 .intro {
     background-size: cover;
@@ -57,4 +58,16 @@ h3 {
 }
 .hover{
     margin-top: 10px;
+}
+li{
+    color: orange;
+}
+h5{
+    color: orange;
+}
+h4{
+    color: orange;
+}
+label{
+    color: orange;
 }
