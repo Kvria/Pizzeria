@@ -2,6 +2,7 @@ body{
     margin: 50px;
     background-color: black;  
     color: orange; 
+    font-family: 'Indie Flower', cursive;
 }
 .intro {
     background-size: cover;
@@ -71,10 +72,9 @@ label{
     color: orange;
 }
 .welcome p{
-    background-image: url(../images/pizza\ 1.jpeg);
-    background-repeat: no-repeat;
     color: orange;
-    background-size: cover;
+    text-align: center;
+    
 }
 #menu{
     background-image: url(../images/board2.jpeg);
@@ -107,7 +107,10 @@ label{
 .topnav a.active {
     background-color: orange;
     color: white;
-  }
-  #contact{
+}
+#contact{
       text-align: center;
-  }
+}
+#motto{
+    font-size: 20px;
+}
