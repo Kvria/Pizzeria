@@ -69,11 +69,10 @@ h4{
 label{
     color: orange;
 }
-.welcome{
-    background-image: url(../images/pizza\ 1.jpeg.jpeg);
-    height: 300px;
+.welcome p{
+    background-image: url(../images/pizza\ 1.jpeg);
     background-repeat: no-repeat;
-    color: black;
+    color: orange;
     background-size: cover;
 }
 #menu{
@@ -87,4 +86,9 @@ label{
 #order{
     background-image: url(../images/order2.jpeg);
     background-repeat: no-repeat;
+    background-size: unset;
+}
+#welcome p{
+    color: black;
+    font-family: 'Trade Winds', ;
 }

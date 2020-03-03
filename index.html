@@ -6,8 +6,8 @@
         <script src="js/index.js"></script>
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
         <link href="css/index.css" rel ="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Trade+Winds&display=swap" rel="stylesheet" type="text/css">
-        
+        <link href="https://fonts.googleapis.com/css?family=Trade+Winds&display=swap" rel="stylesheet">
+    
     </head>
     <body>
         <div class = "intro">
@@ -208,12 +208,17 @@
                                 </select>
                             </div>
                             <div class="form-group" >
+                                <p>How many Pizzas do you want?</p>
+                                <input type="number" id="number">
+                            </div>
+                            <div class="form-group" >
                                 <p>Do you want your food delivered?</p>
                                 <select name="delivery" id="delivery">
                                     <option value="yes">Yes</option>
                                 <option value="no">No</option>
                                 </select>
                             </div>
+                            
                             <div class="form-group" >
                                 <p>If yes, choose your location</p>
                                 <select name="location" id="location">
@@ -229,6 +234,16 @@
                 </div>
             </div>
                 </form>
+            <div class="recipt">
+                 <h3>Here is your receipt;</h3>
+                <p>First Name<span class="fname"></span></p>
+                <p>Size<span class="size"></span></p>
+                <p>crust<span class="crust"></span></p>
+                <p>toppings<span class="toppings"></span></p>
+                <p>number<span class="number"></span></p>
+                <p>delivery<span class="delivery"></span></p>
+                <p>location<span class="location"></span></p>
+            </div>
         
     </body>
 </html>

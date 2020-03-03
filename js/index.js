@@ -1,3 +1,5 @@
+var total=0;
+
 $(document).ready(function(){
     $(".image1").hover(function(){
         $(".text1").toggle();
@@ -41,21 +43,42 @@ $(document).ready(function(){
     $(".image14").hover(function(){
         $(".text14").toggle(); 
     });
+
+    $("#submit").click(function(event){
+        event.preventDefault();
+        
+        var size=$("#size").val();
+        var crust=$("#crust").val();
+        var firstName=$("#fname").val();
+        var lastName=$("#lname").val();
+        var contact=$("#contact").val();
+        var toppings=$("#toppings").val();
+        var number=parseInt($("#number").val());
+        var delivery=$("#delivery").val();
+        var location=$("#location").val();
+        $("#showsize").text(newPizza.size)
+
+        var newPizza=new Order(firstName,lastName,contact,size,crust,toppings,number,delivery,location)
+        checkout(size,crust,toppings,number,delivery);
+        alert(total);
+        total=0;
+       
+
+    });
 });
 var order = new String;
-function Order(firstName, lastName, contact, address, size, crust, toppings, flavours) {
+function Order(firstName, lastName, contact, size, crust, toppings,number, delivery,location) {
     this.firstName = firstName;
     this.lastName = lastName;
     this.contact = contact;
-    this.address = address;
+    this.location = location;
     this. size = size;
     this.crust = crust;
     this.toppings = toppings;
-    this.flavours = flavours;
+    this.delivery = delivery;
+    this.number=number;
 }
-var size =["small", "medium", "large"]
-var crust=["crispy", "stuffed", "gfree"]
-var toppings=["ebacon", "ebell", "ecorn", "eolives"]
+
 
 var small = 650
 var medium = 800
@@ -69,12 +92,59 @@ var eolives = 150
 var nai = 150
 var nonai = 300
 
-let submitDetails = document.getElementById('submit');
 
-submitDetails.addEventListener('click', submitOrder)
-function submitOrder(e) {
-  e.preventDefault();
-  size = (document.getElementById("size").value);
-  crust = (document.getElementById("crust").value);
-  address=(document.getElementById("address").value);
-  
+function checkout(size,crust,toppings,number,delivery){
+    switch (size){
+        case ("small"):
+            total=(total+small)*number;
+            break;
+        case ("medium"):
+            total=(total+medium)*number;
+            break;
+        case ("large"):
+            total=(total+large)*number;
+            break;
+
+    }
+    switch (crust){
+        case ("crispy"):
+            total=(total+0)*number;
+            break;
+        case ("stuffed"):
+            total=(total+stuffed)*number;
+            break;
+        case ("gluten-free"):
+            total=(total+gfree)*number;
+            break;
+        
+    }
+    
+    switch (toppings){
+        case ("bacon"):
+            total=(total+ebacon)*number;
+            break;
+        case ("bell"):
+            total=(total+ebell)*number;
+            break;
+        case ("corn"):
+            total=(total+ecorn)*number;
+            break;
+        case ("olives"):
+            total=(total+eolives)*number;
+            break;
+        
+    }
+
+     switch (delivery){
+        case ("yes"):
+            switch (location){
+                case ("nai"):
+                    total=total+nai;
+                    break;
+                case ("nonai"):
+                    total=total+nonai;
+                    break;
+            }
+    }
+    
+}
