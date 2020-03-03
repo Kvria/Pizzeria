@@ -56,11 +56,12 @@ $(document).ready(function(){
         var number=parseInt($("#number").val());
         var delivery=$("#delivery").val();
         var location=$("#location").val();
+        
         $("#showsize").text(newPizza.size)
 
         var newPizza=new Order(firstName,lastName,contact,size,crust,toppings,number,delivery,location)
         checkout(size,crust,toppings,number,delivery);
-        alert(total);
+        $("#")
         total=0;
        
 
