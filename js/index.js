@@ -55,6 +55,7 @@ $(document).ready(function(){
         this.number=number;
     }
     $("#submit").click(function(event){
+        $(".recipt").show();
         event.preventDefault();
         
         var size=$("#size").val();
