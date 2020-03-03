@@ -43,7 +43,17 @@ $(document).ready(function(){
     $(".image14").hover(function(){
         $(".text14").toggle(); 
     });
-
+    function Order(firstName, lastName, contact, size, crust, toppings,number, delivery,location) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.contact = contact;
+        this.location = location;
+        this. size = size;
+        this.crust = crust;
+        this.toppings = toppings;
+        this.delivery = delivery;
+        this.number=number;
+    }
     $("#submit").click(function(event){
         event.preventDefault();
         
@@ -56,29 +66,26 @@ $(document).ready(function(){
         var number=parseInt($("#number").val());
         var delivery=$("#delivery").val();
         var location=$("#location").val();
-        
-        $("#showsize").text(newPizza.size)
+
 
         var newPizza=new Order(firstName,lastName,contact,size,crust,toppings,number,delivery,location)
-        checkout(size,crust,toppings,number,delivery);
-        $("#")
+        checkout(size,crust,toppings,number,delivery,location);
+        $(".size").text(newPizza.size)
+        $(".crust").text(newPizza.crust)
+        $(".fname").text(newPizza.firstName)
+        $(".contact").text(newPizza.contact)
+        $(".toppings").text(newPizza.toppings)
+        $(".number").text(newPizza.number)
+        $(".delivery").text(newPizza.delivery)
+        $(".location").text(newPizza.location)
+        $(".total").text(total)
         total=0;
        
 
     });
 });
 var order = new String;
-function Order(firstName, lastName, contact, size, crust, toppings,number, delivery,location) {
-    this.firstName = firstName;
-    this.lastName = lastName;
-    this.contact = contact;
-    this.location = location;
-    this. size = size;
-    this.crust = crust;
-    this.toppings = toppings;
-    this.delivery = delivery;
-    this.number=number;
-}
+
 
 
 var small = 650
@@ -94,7 +101,7 @@ var nai = 150
 var nonai = 300
 
 
-function checkout(size,crust,toppings,number,delivery){
+function checkout(size,crust,toppings,number,delivery,location){
     switch (size){
         case ("small"):
             total=(total+small)*number;
@@ -146,6 +153,9 @@ function checkout(size,crust,toppings,number,delivery){
                     total=total+nonai;
                     break;
             }
+            break;
+        case("no"):
+        total=total+0;
     }
     
 }
